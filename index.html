@@ -1,0 +1,531 @@
+<!DOCTYPE html>
+
+<html lang="en">
+	<head>
+        
+        <title>Marty Upham || Home Page</title>
+		<meta charset="UTF-8">
+        
+        <!--Viewport of your page, which will give the browser instructions on 
+        how to control the page's dimensions and scaling whilst aiding reponsive design-->
+        
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <!-- Favicon Metadata (page icon) -->
+        <link rel="shortcut icon" type="image/gif" href="images/.gif">
+        
+        <!-- Open Graph/Link Preview (media content when sending url links) -->
+        <meta property="og:site_name" content="Marty Upham" />
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="art.martyupham.com" />
+        
+        <!-- %%%%% -->
+        <meta property="og:image" content="Images/mid-afternoon_change-1_OG_1200_x_630px.jpg" />
+        
+        <!-- %%%%% -->
+        <meta property="og:title" content="Home Page || Marty Upham" />
+        
+        <!-- %%%%% -->
+        <meta property="og:description" content="Home Page of Official Marty Upham Art Website" />
+        
+        <!-- STYLE Sheets -->
+        <!-- This style sheets represents specific styles applicable to this page -->
+        <link rel="stylesheet" href="css/home.css">
+        
+        <link rel="stylesheet" href="css/global.css">
+        <link rel="stylesheet" href="css/responsive.css">
+        
+        
+        
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap" rel="stylesheet">   
+        
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
+     
+	</head>
+    
+    
+    <!-- OPENING NOTES -->
+    <!-- Comments are written directly above the HTML that is written --> 
+    <!-- In some detailed cases, further commentary may appear to the right -->
+    
+    
+    <!-- START of page -->
+    
+    <body>
+        
+       
+        <div id="loader"></div> 
+        
+        
+        <script src="Javascript/script.js">
+        </script>
+
+        <script src="Javascript/homescript.js">
+        </script>
+    
+        <script type="text/javascript">
+        let previous = 0;
+        let current = 1;
+        let intervalID;
+            window.onload=openModal;
+        </script>
+        
+        
+        
+        
+        
+        <!-- The Modal -->
+        <div id="myHomeModal" class="home-modal">
+            <div id="enterSiteBtn" title="Enter Site" onclick="closeHomeModal()">
+                <i class="fas fa-arrow-right"></i>
+            </div>
+
+    <!-- Modal content -->
+       <!-- FULL PAGE IMAGE SLIDESHOW --> 
+        
+       <div class="home-slideshow-container">
+
+        <div class="homeSlides fade">
+            
+            
+            <picture>
+                
+                <!-- 16:9 Aspect Ratio (Landscape) -->
+                <source media="(min-width: 1920px)" srcset="Images/Tomorrows_Past-4_CROP_16-9_2600_x_1463px.jpg">
+                
+                <!-- 2:3 Aspect Ratio (Landscape) -->
+                <source media="(min-width: 1600px)" srcset="Images/Tomorrows_Past-4_CROP_2-3_1920_x_1280px.jpg">
+                
+                <!-- 4:5 Aspect Ratio (Landscape) -->
+                <source media="(min-width: 1366px)" srcset="Images/Tomorrows_Past-4_CROP_4-5_1600_x_1280px.jpg">
+                
+                <!-- 1:1 Aspect Ratio (Square) -->
+                <source media="(min-width: 1024px)" srcset="Images/Tomorrows_Past-4_CROP_1-1_1500_x_1500px.jpg">
+                
+                <!-- 4:5 Aspect Ratio (Portrait) -->
+                <source media="(min-width: 768px)" srcset="Images/Tomorrows_Past-4_CROP_4-5_1500_x_1200px.jpg">
+                
+                <!-- 16:9 Aspect Ratio (Portrait) -->
+                <source media="(min-width: 640px)" srcset="Images/Tomorrows_Past-4_CROP_16-9_1500_x_844px.jpg">
+                
+                <!-- DEFAULT 18:9 Aspect Ratio (Portrait) -->
+                <img class="imgDisplay" src="Images/Tomorrows_Past-4_CROP_18-9_1200_x_600px.jpg" alt="A Doorway">
+                
+            </picture> 
+            
+        </div>
+        
+        
+        <div class="homeSlides fade">
+          
+            <picture>
+                
+                <!-- 16:9 Aspect Ratio (Landscape) -->
+                <source media="(min-width: 1920px)" srcset="Images/cant_find_my_keys-2_CROP_16-9_2600_x_1463px.jpg">
+                
+                <!-- 2:3 Aspect Ratio (Landscape) -->
+                <source media="(min-width: 1600px)" srcset="Images/cant_find_my_keys-2_CROP_2-3_1920_1280px.jpg">
+                
+                <!-- 4:5 Aspect Ratio (Landscape) -->
+                <source media="(min-width: 1366px)" srcset="Images/cant_find_my_keys-2_CROP_4-5_1600_x_1280px.jpg">
+                
+                <!-- 1:1 Aspect Ratio (Square) -->
+                <source media="(min-width: 1024px)" srcset="Images/cant_find_my_keys-2_CROP_1-1_1500_x_1500px.jpg">
+                
+                <!-- 4:5 Aspect Ratio (Portrait) -->
+                <source media="(min-width: 768px)" srcset="Images/cant_find_my_keys-2_CROP_4-5_1500_x_1200px.jpg">
+                
+                <!-- 16:9 Aspect Ratio (Portrait) -->
+                <source media="(min-width: 640px)" srcset="Images/cant_find_my_keys-2_CROP_16-9_1500_x_844px.jpg">
+            
+                <!-- DEFAULT 18:9 Aspect Ratio (Portrait) -->
+                <img class="imgDisplay"  src="Images/cant_find_my_keys-2_CROP_18-9_600_x_1200px.jpg" alt="A Figure Standing">
+                
+            </picture>
+          
+        </div>
+        
+        <div class="homeSlides fade">
+          
+            <picture>
+                
+                
+                <!-- 16:9 Aspect Ratio (Landscape) -->
+                <source media="(min-width: 1920px)" srcset="Images/preview-4_CROP_16-9_2600_x_1463px.jpg">
+                
+                <!-- 2:3 Aspect Ratio (Landscape) -->
+                <source media="(min-width: 1600px)" srcset="Images/preview-4_CROP_2-3_1920_x_1280px.jpg">
+                
+                <!-- 4:5 Aspect Ratio (Landscape) -->
+                <source media="(min-width: 1366px)" srcset="Images/preview-4_CROP_4-5_1600_x_1280px.jpg">
+                
+                <!-- 1:1 Aspect Ratio (Square) -->
+                <source media="(min-width: 1024px)" srcset="Images/preview-4_CROP_1-1_1500_x_1500px.jpg">
+                
+                <!-- 4:5 Aspect Ratio (Portrait) -->
+                <source media="(min-width: 768px)" srcset="Images/preview-4_CROP_4-5_1500_x_1200px.jpg">
+                
+                <!-- 16:9 Aspect Ratio (Portrait) -->
+                <source media="(min-width: 640px)" srcset="Images/preview-4_CROP_16-9_1500_x_844px.jpg">
+                
+                <!-- DEFAULT 18:9 Aspect Ratio (Portrait) -->
+                <img class="imgDisplay"  src="Images/preview-4_CROP_18-9_1200_x_600px.jpg" alt="A Figure Sitting">
+                
+            </picture>
+          
+        </div>
+          
+          <div class="homeSlides fade">
+          
+            <picture>
+                
+                
+                <!-- 16:9 Aspect Ratio (Landscape) -->
+                <source media="(min-width: 1920px)" srcset="Images/preview-3_CROP_16-9_2600_x_1463px.jpg">
+                
+                <!-- 2:3 Aspect Ratio (Landscape) -->
+                <source media="(min-width: 1600px)" srcset="Images/preview-3_CROP_2-3_1920_x_1280px.jpg">
+                
+                <!-- 4:5 Aspect Ratio (Landscape) -->
+                <source media="(min-width: 1366px)" srcset="Images/preview-3_CROP_4-5_1600_x_1280px.jpg">
+                
+                <!-- 1:1 Aspect Ratio (Square) -->
+                <source media="(min-width: 1024px)" srcset="Images/preview-3_CROP_1-1_1500_x_1500px.jpg">
+                
+                <!-- 4:5 Aspect Ratio (Portrait) -->
+                <source media="(min-width: 768px)" srcset="Images/preview-3_CROP_4-5_1500_x_1200px.jpg">
+                
+                <!-- 16:9 Aspect Ratio (Portrait) -->
+                <source media="(min-width: 640px)" srcset="Images/preview-3_CROP_16-9_1500_x_844px.jpg">
+                
+                <!-- DEFAULT 18:9 Aspect Ratio (Portrait) -->
+                <img class="imgDisplay"  src="Images/preview-3_CROP_18-9_1200_x_600px.jpg" alt="A Figure Standing">
+                
+            </picture>
+          
+        </div>
+
+        <div class="homeSlides fade">
+          
+            <picture>
+                
+                
+                <!-- 16:9 Aspect Ratio (Landscape) -->
+                <source media="(min-width: 1920px)" srcset="Images/Mistaken_Identities-3_CROP_16-9_2600_x_1463px.jpg">
+                
+               <!-- 2:3 Aspect Ratio (Landscape) -->
+                <source media="(min-width: 1600px)" srcset="Images/Mistaken_Identities-3_CROP_2-3_1920_x_1280px.jpg">
+                
+                <!-- 4:5 Aspect Ratio (Landscape) -->
+                <source media="(min-width: 1366px)" srcset="Images/Mistaken_Identities-3_CROP_4-5_1600_x_1280px.jpg">
+                
+                <!-- 1:1 Aspect Ratio (Square) -->
+                <source media="(min-width: 1024px)" srcset="Images/Mistaken_Identities-3_CROP_1-1_1500_x_1500px.jpg">
+                
+                <!-- 4:5 Aspect Ratio (Portrait) -->
+                <source media="(min-width: 768px)" srcset="Images/Mistaken_Identities-3_CROP_4-5_1500_x_1200px.jpg">
+                
+                 <!-- 16:9 Aspect Ratio (Portrait) -->
+                <source media="(min-width: 640px)" srcset="Images/Mistaken_Identities-3_CROP_16-9_1500_x_844px.jpg">
+                
+                <!-- DEFAULT 18:9 Aspect Ratio (Portrait) -->
+                <img class="imgDisplay"  src="Images/Mistaken_Identities-3_CROP_18-9_1200_x_600px.jpg" alt="A Figures Face">
+                
+            </picture> 
+          
+        </div>
+        
+        <div class="homeSlides fade">
+            
+            
+            <picture>
+                
+                <!-- 16:9 Aspect Ratio (Landscape) -->
+                <source media="(min-width: 1920px)" srcset="Images/Vertically_Malaligned-7_CROP_16-9_2600_x_1463px.jpg">
+                
+                <!-- 2:3 Aspect Ratio (Landscape) -->
+                <source media="(min-width: 1600px)" srcset="Images/Vertically_Malaligned-7_CROP_2-3_1920_x_1280px.jpg">
+                
+                <!-- 4:5 Aspect Ratio (Landscape) -->
+                <source media="(min-width: 1366px)" srcset="Images/Vertically_Malaligned-7_CROP_4-5_1600_x_1280px.jpg">
+                
+                <!-- 1:1 Aspect Ratio (Square) -->
+                <source media="(min-width: 1024px)" srcset="Images/Vertically_Malaligned-7_CROP_1-1_1500_x_1500px.jpg">
+                
+                <!-- 4:5 Aspect Ratio (Portrait) -->
+                <source media="(min-width: 768px)" srcset="Images/Vertically_Malaligned-7_CROP_4-5_1500_x_1200px.jpg">
+                
+                <!-- 16:9 Aspect Ratio (Portrait) -->
+                <source media="(min-width: 640px)" srcset="Images/Vertically_Malaligned-7_CROP_16-9_1500_x_844px.jpg">
+                
+                <!-- DEFAULT 18:9 Aspect Ratio (Portrait) -->
+                <img class="imgDisplay"  src="Images/Vertically_Malaligned-7_CROP_18-9_1200_x_600px.jpg" alt="Day Turning Night">
+                
+            </picture> 
+            
+        </div>
+        
+        
+        
+        
+    </div>
+
+  
+  </div>
+        
+       
+        
+        <div class="home-page-container">
+            
+            
+            <!-- NAVIGATION -->
+            <section>
+
+                <div class="nav-container">
+
+                    <div class="top-nav-bar">
+
+                        <!-- TITLE BANNER VIDEO (All pages except home page) -->
+                        <!-- The 'defaultMuted' and 'playsinline' attributes allow for the -->
+                        <!-- video to be autoplayed when accessed by mobile devices -->
+
+                        <video autoplay loop muted defaultMuted playsinline 
+                               class ="titleBannerVid" 
+                               poster="images/title_banner_1920X1080_Trim_18_Sec_Moment.jpg" >
+                          <source src="video/Tv Noise Glitch 3-1.mp4" type="video/mp4">
+                          <source src="video/.webm" type="video/webm">  
+                          Your browser does not support HTML5 video.
+
+                        </video>
+                        
+                        <!-- MOBILE SITE TITLE responsive at 768px -->
+                        <div class="mobile-site-title">
+                                <a href="index.html">Marty Upham</a>
+                            </div>
+                        
+                        
+                        <div class="site-title">
+                           <a href="index.html">Marty <br> Upham</a>
+                            <div class="menu-btn">
+                                <!-- onclick btn uses JS to open responsive menu -->
+                                <a href="javascript:void(0)" 
+                                   onclick="rotateIcon(); myMobileMenu(); openMenuBar()">
+                                    <i class="fas fa-bars" id="menu-icon"></i>
+                                </a>
+                            </div>
+                            
+                        </div>
+                        
+                        
+
+                    </div>
+                    
+
+                    <!-- The mobile-nav opens with onclick MyMobileMenu() -->
+
+                    <div class="mobile-nav bold-bg">
+                          <!-- Navigation links (hidden by default) -->
+                          <div id="myLinks">
+                            <a href="index.html">Home</a>
+                            <a href="sequences.html">Sequences</a>
+                            <a href="about.html">About</a>
+                          </div>
+
+                    </div>
+
+
+                    <!-- The menu-bar opens with onclick openMenuBar() -->
+                    <!-- and replaces the mobile-nav at 992px -->
+
+                    <div class="menu-bar-container" id="navBarMenuGrab"> 
+                        <div id="myMenuBar">
+                            <a href="index.html">Home</a>
+                            <a href="sequences.html">Sequences</a>
+                            <a href="about.html">About</a>
+                        </div>
+
+                    </div>
+
+
+                </div>
+            
+            </section>
+            
+        
+            <!-- MAIN CONTENT -->
+            <section>
+                
+                <div class="main-content">
+
+                    <div class="row">
+
+                        <div class="col-xs-12">
+
+                            <div class="quote-container">
+                                <div class="quote-text">
+                                    <h1>photoSequences</h1>
+                                    <br>
+                                    <h4>&lsqb;foh-toh-See-kw<span>uh</span>ns-ezz&rsqb;</h4>
+                                    <br>
+                                    <ol>
+                                        <li>a collection of photographs in a specific order that tells a story</li>
+                                        <li>visual storytelling</li>
+                                        <li>just be careful with Mandi. She's quit her job and Nick has died</li>
+                                        <li>fotographic fiction&quest;</li>
+                                    </ol>
+                                </div>
+                            </div>  
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="row">
+
+                        <div class="col-xs-12">
+
+                            <div class="image-graphic-container">
+                                
+                                <div class="image-graphic-mobile">
+                                    
+                                    <a href="javascript:delay('a-mid-afternoon-change.html')">
+                                    
+                                        <picture>
+
+                                        <source media="(min-width: 768px)" srcset="Images/mid-afternoon_change-1_CROP_1366px.jpg">
+
+                                        <img src="Images/mid-afternoon_change-1_CROP_1-1_768px.jpg" id="imageSwapSmallOne"
+                                             ontouchstart="changePicOne()">
+
+                                        </picture>
+                                        
+                                     </a>
+                                    
+                                    
+                                </div>
+                                
+                                <div class="image-graphic-desktop">
+                                    
+                                    <a href="javascript:delay('a-mid-afternoon-change.html')" onclick="move()">
+                                        <img src="Images/mid-afternoon_change-1_CROP_1366px.jpg" id="imageSwapBigOne"
+                                                 onpointerover="changePicThree()" onpointerout="changePicFour()">
+                                    </a>
+                                    
+                                </div>
+                                
+                            </div>
+
+                        </div>
+
+                    </div>
+                    
+                    <div class="row">
+
+                        <div class="col-xs-12">
+
+                            <div class="image-splash">
+
+                                <a href="sequences.html">
+                                    <picture>
+
+                                        <source media="(min-width: 768px)" srcset="Images/sequences_graphic_3-2.png">
+
+                                        <img src="Images/sequences_graphic_1-1.png">
+                                    </picture>
+                                </a>
+                                    
+                            </div>
+                        </div>
+
+                    </div>
+
+
+                    <div class="row">
+
+                        <div class="col-xs-12">
+
+                            <div class="image-graphic-container">
+                                
+                                <div class="image-graphic-mobile">
+                                    
+                                    <a href="javascript:delay('tomorrows-past.html')">
+                                    
+                                        <picture>
+
+                                        <source media="(min-width: 768px)" srcset="Images/Tomorrows_Past-2_1366px.jpg">
+
+                                        <img src="Images/Tomorrows_Past-2_CROP_1-1_768px.jpg" id="imageSwapSmallTwo"
+                                             ontouchstart="changePicFive()">
+
+                                        </picture>
+                                        
+                                     </a>
+                                    
+                                    
+                                </div>
+                                
+                                <div class="image-graphic-desktop">
+                                    
+                                    <a href="javascript:delay('tomorrows-past.html')" onclick="move()">  
+                                        <img src="Images/Tomorrows_Past-2_1366px.jpg" id="imageSwapBigTwo"
+                                                 onpointerover="changePicSeven()" onpointerout="changePicEight()">
+                                    </a>
+                                </div>
+                                
+                            </div>
+
+                        </div>
+
+                    </div>
+                    
+                    <div class="row">
+
+                        <div class="col-xs-12">
+
+                            <div class="image-splash">
+
+                                <a href="about.html">
+                                    <picture>
+
+                                        <source media="(min-width: 768px)" srcset="Images/about_graphic_3-2.png">
+
+                                        <img src="Images/about_graphic_1-1.png">
+                                    </picture>
+                                </a>
+
+                            </div>
+                        </div>
+
+                    </div>
+                
+                    
+                </div>
+
+            </section>
+            
+            <!-- FOOTER -->
+            <!-- Relies on parent "page-container" for page positioning -->
+            <div class="first-tier-footer">
+
+                <p>All Images Copyright &#169;</p>
+                <p>Marty Upham 2018-<span id="year"></span></p>
+                
+                <a href="https://www.instagram.com/martyupham.art/" class="fa fa-brands fa-instagram"></a>
+
+            </div>
+
+            
+
+        </div>
+        
+        
+        
+   
+
+    
+    
+	</body>
+</html>

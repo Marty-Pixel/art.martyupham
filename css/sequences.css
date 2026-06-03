@@ -1,0 +1,77 @@
+
+
+/*  SEQUENCES PAGE Style Sheet
+
+/*  Comments are written directly above the CSS that is written. In Some cases of nested styling, comments are beside */
+
+
+/*  SEQUENCE (SECONDARY) PAGE */
+
+section .sequence-content {
+  padding: 10% 2.5% 0 2.5%;
+    max-width:1200px;
+    margin:auto;
+}
+
+
+
+.image-container-sp-one {
+    
+   
+}
+
+
+
+.image-container-sp-two {
+    
+    
+}
+
+
+
+
+
+
+
+/*  MEDIA RULES */
+
+@media only screen and (min-width: 768px) {
+    
+    section .sequence-content [class*="col-"] {
+      float: left;
+      padding: 0 0 5px 0;
+}
+    section .sequence-content {
+    padding: 80px 2.5% 80px 2.5%;
+  }
+    
+   
+    
+  .image-container-sp-one img {
+    padding: 0 2.5px 0 0;
+  }
+  .image-container-sp-two img {
+    padding: 0 0 0 2.5px;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .image-container-sp-one img {
+    padding: 0 0 0 0;
+  }
+   
+    .image-container-sp-two img {
+    padding: 0 0 0 0;
+  }
+    
+}
+
+@media only screen and (min-width: 992px) {
+    
+    section .sequence-content {
+    padding: 80px 25px 80px 25px;
+  }
+}
+
+
+    

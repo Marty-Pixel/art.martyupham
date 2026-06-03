@@ -1,0 +1,1225 @@
+
+
+/*  INDEX (home) PAGE Style Sheet
+
+/*  This style sheet introduces the use of fluid grids. Columns are defined (12) and make up a 100% width of viewport  */
+/*  Div rows are then used that parent the columns and determine how many columns will exist on that row */
+
+/*  Comments are written directly above the CSS that is written. In Some cases of nested styling, comments are beside */
+
+
+/*  START Fluid grid styles (RESPONSIVE). Applicable to all pages   */
+
+/*  Starting Point 100% column width:  */
+/*  Always design for Mobile first  */
+
+[class*="col-"] {
+  width: 100%;
+}
+
+/*  Media queries used to establish Responsive Design*/
+
+/*  For EXTRA SMALL MOBILE PHONES:  */
+/*  Media query used to set a breakpoint at 640px  */
+/*  Any device that falls into this screen category, columns will display as below width percentages  */
+/*  Establishes a grid system with 12 seperate columns that when combined make 100% of the viewport*/
+
+@media only screen and (max-width: 640px) {
+  .col-xs-1 {
+    width: 8.33%;
+  }
+  .col-xs-2 {
+    width: 16.66%;
+  }
+  .col-xs-3 {
+    width: 25%;
+  }
+  .col-xs-4 {
+    width: 33.33%;
+  }
+  .col-xs-5 {
+    width: 41.66%;
+  }
+  .col-xs-6 {
+    width: 50%;
+  }
+  .col-xs-7 {
+    width: 58.33%;
+  }
+  .col-xs-8 {
+    width: 66.66%;
+  }
+  .col-xs-9 {
+    width: 75%;
+  }
+  .col-xs-10 {
+    width: 83.33%;
+  }
+  .col-xs-11 {
+    width: 91.66%;
+  }
+  .col-xs-12 {
+    width: 100%;
+  }
+}
+
+/*  For MOBILE PHONES:  */
+/*  Media query used to set a breakpoint between at 641px  */
+/*  Any device that falls into this screen category, columns will display as below width percentages  */
+/*  Establishes a grid system with 12 seperate columns that when combined make 100% of the viewport*/
+
+@media only screen and (min-width: 641px) {
+  .col-s-1 {
+    width: 8.33%;
+  }
+  .col-s-2 {
+    width: 16.66%;
+  }
+  .col-s-3 {
+    width: 25%;
+  }
+  .col-s-4 {
+    width: 33.33%;
+  }
+  .col-s-5 {
+    width: 41.66%;
+  }
+  .col-s-6 {
+    width: 50%;
+  }
+  .col-s-7 {
+    width: 58.33%;
+  }
+  .col-s-8 {
+    width: 66.66%;
+  }
+  .col-s-9 {
+    width: 75%;
+  }
+  .col-s-10 {
+    width: 83.33%;
+  }
+  .col-s-11 {
+    width: 91.66%;
+  }
+  .col-s-12 {
+    width: 100%;
+  }
+}
+
+/*  For TABLETS AND MEDIUM SIZED DEVICES:  */
+/*  Media query used to set a breakpoint at 768px  */
+/*  Any device that falls into this screen category, columns will display as below width percentages  */
+/*  Establishes a grid system with 12 seperate columns that when combined make 100% of the viewport*/
+
+@media only screen and (min-width: 768px) {
+  .col-m-1 {
+    width: 8.33%;
+  }
+  .col-m-2 {
+    width: 16.66%;
+  }
+  .col-m-3 {
+    width: 25%;
+  }
+  .col-m-4 {
+    width: 33.33%;
+  }
+  .col-m-5 {
+    width: 41.66%;
+  }
+  .col-m-6 {
+    width: 50%;
+  }
+  .col-m-7 {
+    width: 58.33%;
+  }
+  .col-m-8 {
+    width: 66.66%;
+  }
+  .col-m-9 {
+    width: 75%;
+  }
+  .col-m-10 {
+    width: 83.33%;
+  }
+  .col-m-11 {
+    width: 91.66%;
+  }
+  .col-m-12 {
+    width: 100%;
+  }
+}
+
+/*  For DESKTOPS:  */
+/*  Media query used to set a breakpoint at 992px  */
+/*  Any device that falls into this screen category, columns will display as below width percentages  */
+/*  Establishes a grid system with 12 seperate columns that when combined make 100% of the viewport*/
+
+@media only screen and (min-width: 992px) {
+  .col-l-1 {
+    width: 8.33%;
+  }
+  .col-l-2 {
+    width: 16.66%;
+  }
+  .col-l-3 {
+    width: 25%;
+  }
+  .col-l-4 {
+    width: 33.33%;
+  }
+  .col-l-5 {
+    width: 41.66%;
+  }
+  .col-l-6 {
+    width: 50%;
+  }
+  .col-l-7 {
+    width: 58.33%;
+  }
+  .col-l-8 {
+    width: 66.66%;
+  }
+  .col-l-9 {
+    width: 75%;
+  }
+  .col-l-10 {
+    width: 83.33%;
+  }
+  .col-l-11 {
+    width: 91.66%;
+  }
+  .col-l-12 {
+    width: 100%;
+  }
+}
+
+*  For DESKTOPS AND LARGE DEVICES:  */
+/*  Media query used to set a breakpoint at 1200px  */
+/*  Any device that falls into this screen category, columns will display as below width percentages  */
+/*  Establishes a grid system with 12 seperate columns that when combined make 100% of the viewport*/
+
+@media only screen and (min-width: 1200px) {
+  .col-xl-1 {
+    width: 8.33%;
+  }
+  .col-xl-2 {
+    width: 16.66%;
+  }
+  .col-xl-3 {
+    width: 25%;
+  }
+  .col-xl-4 {
+    width: 33.33%;
+  }
+  .col-xl-5 {
+    width: 41.66%;
+  }
+  .col-xl-6 {
+    width: 50%;
+  }
+  .col-xl-7 {
+    width: 58.33%;
+  }
+  .col-xl-8 {
+    width: 66.66%;
+  }
+  .col-xl-9 {
+    width: 75%;
+  }
+  .col-xl-10 {
+    width: 83.33%;
+  }
+  .col-xl-11 {
+    width: 91.66%;
+  }
+  .col-xl-12 {
+    width: 100%;
+  }
+}
+
+/*  For XX Large DESKTOPS AND UHD DISPLAYS:  */
+/*  Media query used to set a breakpoint at 1920px  */
+/*  Any device that falls into this screen category, columns will display as below width percentages  */
+/*  Establishes a grid system with 12 seperate columns that when combined make 100% of the viewport*/
+
+@media only screen and (min-width: 1920px) {
+  .col-xxl-1 {
+    width: 8.33%;
+  }
+  .col-xxl-2 {
+    width: 16.66%;
+  }
+  .col-xxl-3 {
+    width: 25%;
+  }
+  .col-xxl-4 {
+    width: 33.33%;
+  }
+  .col-xxl-5 {
+    width: 41.66%;
+  }
+  .col-xxl-6 {
+    width: 50%;
+  }
+  .col-xxl-7 {
+    width: 58.33%;
+  }
+  .col-xxl-8 {
+    width: 66.66%;
+  }
+  .col-xxl-9 {
+    width: 75%;
+  }
+  .col-xxl-10 {
+    width: 83.33%;
+  }
+  .col-xxl-11 {
+    width: 91.66%;
+  }
+  .col-xxl-12 {
+    width: 100%;
+  }
+}
+
+
+/*  Adds a clear element property ::after all instances of classes of ".row"  */
+/*  Allowing the next row to fall directly underneath the last  */
+
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+/* Each column is set with the same attributes as one another  */
+
+[class*="col-"] {
+  float: left;
+  padding: 0 0 12.5% 0;
+}
+
+
+
+
+@media only screen and (min-width: 768px) {
+  [class*="col-"] {
+    padding: 0 0 80px 0;
+  }
+}
+
+/*  END Fluid grid styles   */
+
+
+
+/* DEFAULT - Styles are applicable to all pages  */
+
+html,
+body {
+  margin: 0;
+  height: 100%;
+  font-family: "Roboto Mono", monospace;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+
+/* HOME PAGE CONTAINER - Display set to none until site entered/slideshow closed  */
+
+.home-page-container {
+    display:none;
+  position: relative;
+  margin: auto;
+  min-height: 100vh;
+  width: 100%;
+  max-width: 1920px; /* MAX WIDTH OF SCREEN CONTENT  */
+  padding: 0 ; /* SIDE PADDING  */
+}
+
+/* PAGE CONTAINER - For the rest of the site  */
+
+.page-container {
+  position: relative;
+  margin: auto;
+  min-height: 100vh;
+  width: 100%;
+  max-width: 1920px; /* MAX WIDTH OF SCREEN CONTENT  */
+  padding: 0; /* SIDE PADDING  */
+}
+
+
+
+@media only screen and (min-width: 768px) {
+    
+    .home-page-container    {padding: 0 0;} /* SIDE PADDING  */ 
+    .page-container         {padding: 0 0;} /* SIDE PADDING  */
+}
+
+@media only screen and (min-width: 992px) {
+    
+    .home-page-container    {padding: 0  0;} /* SIDE PADDING locked  */ 
+    .page-container         {padding: 0  0;} /* SIDE PADDING locked  */
+}
+
+/* HOME PAGE - MODAL  */
+
+/* Slideshow container */
+.home-slideshow-container {
+  width: 100%;
+  position: relative;
+
+}
+
+/* The Modal (background) */
+.home-modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: black;
+}
+
+.homeSlides {
+  display: none;
+  padding-bottom: 30px;
+}
+
+.homeSlides:first-of-type {
+  display: block;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+/* Styling for Enter button */
+#enterSiteBtn {
+  opacity: 0.7;
+  position: absolute;
+  bottom: 55px;
+  left: 30px;
+  z-index: 999;
+  font-size: 24px;
+  border: none;
+  outline: none;
+  color: white;
+  background-color: #f0776c;
+  cursor: pointer;
+  padding: 15px;
+  border-radius: 50%;
+    
+/* Delay for Enter button */ 
+    -webkit-animation: 4s ease 0s normal forwards 1 fadein;
+    animation: 4s ease 0s normal forwards 1 fadein;
+}
+
+@keyframes fadein{
+    0% { opacity:0; }
+    66% { opacity:0; }
+    100% { opacity:1; }
+}
+
+@-webkit-keyframes fadein{
+    0% { opacity:0; }
+    66% { opacity:0; }
+    100% { opacity:1; }  
+}
+
+#enterSiteBtn a {
+  text-decoration: none;
+  color: white;
+}
+
+#enterSiteBtn:hover {
+  background-color: #f8bfba;
+  color: black;
+  opacity: 1;
+}
+@-webkit-keyframes fade {
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fade {
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+
+
+/* HOME PAGE  */
+
+.nav-container {
+  width: 100%;
+  top: 0;  
+}
+
+.top-nav-bar {
+  position: relative;
+  width: 100%;
+    min-height:66vh;
+    background: rgba(0, 0, 0, 0.2);
+    border-bottom: solid black 2px;
+  overflow: hidden;
+}
+
+.top-nav-bar a {
+  color: white;
+}
+
+
+.titleBannerVid {
+  position: absolute;
+  z-index: -99; /* Sits behind Site Title and the Menu Btn */
+  
+  min-width: 100%; /* Video always covers the width of the screen 100% */
+  object-fit: cover; /* Covers screen while maintaining videos aspect ratio */
+}
+
+.mobile-site-title  {
+    position:absolute;
+    top:33%;
+    font-size: 19vw;
+  text-transform: uppercase;
+  
+    
+}
+
+.mobile-site-title a    {
+    
+    display:inline-block;
+    width:auto;
+    text-align: center;
+    text-decoration: none;
+  cursor: pointer; 
+    line-height: 0.75;
+    
+}
+
+
+
+.site-title {
+  font-size: 4rem;
+  text-transform: uppercase;
+  padding: 36px;
+  width: auto;
+}
+
+.site-title a {
+    display:none; /* Responsive mode: Text Displays at 768px */
+    
+  text-decoration: none;
+  cursor: pointer;
+    line-height: 0.75;
+}
+
+/* Responsive menu. See menu-container, menu-box-1 & menu-box-2 below */
+.menu-btn {
+  position: absolute;
+  top: 0;
+  right: 0;
+  font-size: 2rem;
+  cursor: pointer;
+  padding: 36px;
+
+  background: none;
+  -ms-transform: rotate(0deg); /* IE 9 */
+  -webkit-transform: rotate(0deg); /* Safari prior 9.0 */
+  transform: rotate(0deg); /* Standard syntax */
+}
+
+.menu-btn-rotate-90 {
+  position: absolute;
+  top: 0;
+  right: 0;
+  font-size: 2rem;
+  cursor: pointer;
+  padding-left: 36px;
+  padding-top: 36px;
+  background: none;
+  -ms-transform: rotate(90deg); /* IE 9 */
+  -webkit-transform: rotate(90deg); /* Safari prior 9.0 */
+  transform: rotate(90deg); /* Standard syntax */
+}
+
+.menu-btn a {
+    display:block;
+  text-decoration: none;
+    
+}
+
+.menu-btn a:hover {
+  color: palegreen;
+}
+
+.menu-btn-rotate-90 a {
+  text-decoration: none;
+  color: white;
+}
+
+.menu-btn-rotate-90 a:hover {
+  color: palegreen;
+}
+
+/* Mobile Menu. Disable at 992px and enable larger menu tiles */
+
+/* Style the navigation menu */
+.mobile-nav {
+  overflow: hidden;
+  background: rgba(0, 0, 0, 0.3);
+  position: relative;
+}
+
+/* Appears on all pages except home page. */
+/* See rgba transparency above for home page */
+.bold-bg {
+  background: white;
+  border-bottom: solid black 2px;
+}
+
+.bold-bg a:hover {
+}
+
+/* Hide the links inside the navigation menu (except for logo/home) */
+.mobile-nav #myLinks {
+  display: none;
+}
+
+/* Style navigation menu links */
+.mobile-nav a {
+  font-style: italic;
+  font-size: 1.5rem;
+  color: black;
+  padding: 14px 36px;
+  text-decoration: none;
+  display: block;
+}
+
+.mobile-nav a:hover {
+  background: black;
+  /* rgba(0, 0, 0, 0.6); */
+  color: palegreen;
+}
+
+.menu-bar-container {
+  display: none;
+}
+
+#myMenuBar {
+  display: none;
+  float: left;
+  width: 100%;
+  background-color: white;
+  height: auto;
+  z-index: 90;
+  padding: 28px 0;
+  border-bottom: solid black 2px;
+}
+
+#myMenuBar a {
+  font-style: italic;
+  font-size: 1.5rem;
+  color: black;
+  padding: 0 72px;
+  text-decoration: none;
+  z-index: 90;
+}
+
+#myMenuBar a:hover {
+  color: palegreen;
+}
+
+/* Breadcrumbs appear on all pages except home page */
+
+.breadcrumb {
+  float: left;
+  width: 100%;
+  margin-bottom: 60px;
+  border-bottom: solid black 2px;
+}
+
+.breadcrumb ul {
+  padding: 6px 32px;
+  list-style: none;
+}
+.breadcrumb ul li {
+  display: inline;
+  font-size: 1.2rem;
+  color: black;
+  letter-spacing: 2px;
+}
+.breadcrumb ul li + li:before {
+  padding: 8px;
+  color: black;
+  content: "/\00a0";
+}
+.breadcrumb ul li a {
+  color: black;
+  text-decoration: none;
+  padding: 8px;
+  letter-spacing: 2px;
+}
+.breadcrumb ul li a:hover {
+  text-decoration: underline;
+}
+
+.breadcrumb ul li span {
+  color: palegreen;
+}
+
+
+
+
+
+
+/* Section  */
+section .main-content {
+  padding: 10% 2.5% 0 2.5%;
+    max-width:1200px;
+    margin:auto;
+}
+
+/* Quote container uses CSS to lock square aspect (1:1) */
+.quote-container {
+  background-color: coral;
+  position: relative;
+  width: 100%;
+  padding-top: 100%; /* 1:1 Aspect Ratio */
+
+  /* padding: 12px 24px; */
+}
+
+.quote-text {
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 8px 24px;
+}
+
+.quote-text h1 {
+  display: inline-block;
+}
+
+.quote-text h4 {
+  display: inline;
+  padding: 0 0 0 12px;
+  letter-spacing: 2px;
+}
+
+.quote-text h4 span {
+  font-style: italic;
+}
+
+.quote-text ol li {
+  padding: 12px 8px;
+}
+
+.image-graphic-container {
+  cursor: pointer;
+}
+
+.image-graphic-desktop {
+  display: none;
+}
+
+.image-splash {
+  cursor: pointer;
+}
+
+
+
+
+
+
+.first-tier-footer {
+  position: sticky; /* Positions footer at bottom of page */
+  top: 100%; /* below its parent, home-page-container and or page-container */
+  padding: 8px 16px;
+    border-top: solid black 2px;
+}
+
+.footer {
+  position: sticky; /* Positions footer at bottom of page */
+  top: 100%; /* below its parent, page-container */
+  padding: 8px 16px;
+}
+
+.first-tier-footer p, .footer p {
+  letter-spacing: 1.5px;
+  font-size: 0.9rem;
+  text-align: center;
+}
+
+
+
+
+@media only screen and (min-width: 600px) {
+  .quote-text {
+    font-size: 1.2rem;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+    
+    .top-nav-bar    {   /* RESPONSIVE: minimizes height of video/top-nav-bar for widescreen */
+        min-height: 0; 
+    }
+    
+    .site-title a {
+    display:inline-block;
+    }
+    
+    .mobile-site-title     {
+        display:none;
+    }
+    
+  section .main-content {
+    padding: 80px 0 0 0;
+  }
+
+  .quote-container {
+    padding-top: 66.6%;
+  } /* 3:2 Aspect Ratio */
+
+  .quote-text {
+    padding: 16px 48px;
+  }
+
+  .image-graphic-mobile {
+    display: none;
+  }
+  .image-graphic-desktop {
+    display: block;
+  }
+}
+
+@media only screen and (min-width: 992px) {
+  .quote-text {
+    font-size: 1.5rem;
+  }
+}
+
+
+
+
+
+/* SEQUENCE (SECONDARY) PAGE */
+
+section .sequence-content {
+  padding: 10% 2.5% 0 2.5%;
+    max-width:1200px;
+    margin:auto;
+}
+
+.image-container-sp-one {
+  padding: 0;
+}
+
+.image-container-sp-two {
+  padding: 0;
+}
+
+@media only screen and (min-width: 768px) {
+    
+    section .sequence-content [class*="col-"] {
+      float: left;
+      padding: 0 0 5px 0;
+}
+    section .sequence-content {
+    padding: 80px 2.5% 80px 2.5%;
+  }
+    
+  .image-container-sp-one {
+    padding-right: 2.5px;
+  }
+  .image-container-sp-two {
+    padding-left: 2.5px;
+  }
+}
+
+@media only screen and (min-width: 992px) {
+    
+    section .sequence-content {
+    padding: 80px 25px 80px 25px;
+  }
+}
+
+
+
+/* SEQUENCE (INDIVIDUAL WORK) PAGES */
+
+.frame-back-button-container {
+  width: 100%;
+    max-width:1200px;
+  padding: 45px 2.5% 0 2.5%;
+    margin:auto;
+    
+}
+
+.frame-back-button {
+  height: auto;
+  margin: 0;
+  width: 100%;
+  padding-left: 15px;
+}
+
+.frame-back-button a {
+  text-decoration: none;
+  text-transform: uppercase;
+  color: black;
+
+  letter-spacing: 4px;
+  font-size: 1.2rem;
+}
+
+.frame-back-button span {
+  display: inline-block; /* Rotates, aligns and corrects text 
+                                                    height of backward facing 'C' in BACK */
+  -webkit-transform: matrix(-1, 0, 0, 1, 0, 0);
+  -moz-transform: matrix(-1, 0, 0, 1, 0, 0);
+  -o-transform: matrix(-1, 0, 0, 1, 0, 0);
+  transform: matrix(-1, 0, 0, 1, 0, 0);
+
+  color: red;
+  padding-left: 4px; /* Corrects letter spacing issues derived from 'C' being rotated */
+  margin-left: -4px;
+}
+
+/*  Image container for sequence title pages that display works side by side */
+
+.image-container {
+  margin: auto;
+  padding: 45px 15px;
+  width: 100%;
+  border-top: solid black 2px;
+  border-bottom: solid black 2px;
+}
+
+/*  Expands image to fill space (Torn images) */
+.image-expand img {
+  width: 100%;
+}
+
+/* COLUMN CLASSES (unique) */
+/* The below classes are used for the sequence pages and
+    use specific width percentages that are calculated and 
+    reflect the individual work*/
+
+[class*="column"] {
+  padding: 4px;
+  float: left;
+}
+
+/*  Column has a total of one (1) image. 
+
+/*  TITLE(S) */
+/*  Birds (partial) */
+/*  Gone Fishing (partial) */
+/*  Tomorrows Past (partial) */
+/*  Vertical Malaligned (partial) */
+
+.column-one {
+  width: 100%;
+}
+
+/*  Column has a total of two (2) images. 
+
+/*  TITLE(S) */
+/*  A mid-afternoon change (partial)*/
+/*  Birds (partial)*/
+/*  Can't find my damn Keys (partial) */
+/*  Gone Fishing (partial) */
+/*  I awoke from a dark dream (partial) */
+/*  Tomorrows Past (partial) */
+/*  Vertical Malaligned (partial) */
+
+.column-two {
+  width: 50%;
+}
+
+/*  Column has a total of two (2) images with one (1) in portrait orientation */
+
+/*  TITLE(S) */
+/*  Gone Fishing (partial) */
+/*  I awoke from a dark dream (partial) */
+/*  Tomorrows Past (partial) */
+/*  Vertical Malaligned (partial) */
+
+.column-two-one {
+  width: 68.8%;
+}
+
+.column-two-one-portrait {
+  width: 31.2%;
+}
+
+/*  Below class used as a hack to correct image alignment on modal screen */
+
+.column-two-one-portrait-demo {
+  width: 31.2%;
+}
+
+/*  Column has a total of two (2) images with one (1) in portrait orientation */
+
+/*  IMPORTANT: This class set refers to a series that was captured in 
+    4:3 (micro 4/3) format and therefore differs in width percentages
+    to a comparable series captured in 3:2 (DSLR) format */
+
+/*  TITLE(S) */
+/*  Can't find my damn Keys (partial) */
+
+.column-two-one-4-3 {
+  width: 66.3%;
+}
+
+.column-two-one-4-3-portrait {
+  width: 33.7%;
+}
+
+/*  Below class used as a hack to correct image alignment on modal screen */
+
+.column-two-one-4-3-portrait-demo {
+  width: 33.7%;
+}
+
+/*  Column has a total of three (3) images. All landscape orientaion */
+
+/*  TITLE(S) */
+/*  Birds (modal thumbnails) */
+/*  Gone Fishing (modal thumbnails) */
+/*  Tomorrows Past (modal thumbnails) */
+/*  Vertically Malaligned (modal thumbnails) */
+
+.column-three {
+  width: 33.33%;
+}
+
+/*  Column has a total of three (3) images with one (1) in portrait orientation */
+
+/*  TITLE(S) */
+/*  Tomorrows Past (modal thumbnails) */
+/*  Vertically Malaligned (modal thumbnails) */
+
+.column-three-one {
+  width: 40.7%;
+}
+
+.column-three-one-portrait {
+  width: 18.6%;
+}
+
+/*  Below class used as a hack to correct image alignment on modal screen */
+
+.column-three-one-portrait-demo {
+  width: 18.6%;
+}
+
+/*  Column has a total of four (4) images. */
+
+/*  TITLE(S) */
+/*  A mid-afternoon change (modal thumbnails) */
+
+.column-four {
+  width: 25%;
+}
+
+/*  Column has a total of four (4) images with one (1) in portrait orientation */
+
+/*  TITLE(S) */
+/*  I awoke from a dark dream (modal thumbnails) */
+
+.column-four-one {
+  width: 28.9%;
+}
+
+.column-four-one-portrait {
+  width: 13.3%;
+}
+
+/*  Below class used as a hack to correct image alignment on modal screen */
+
+.column-four-one-potrait-demo {
+  width: 13.3%;
+}
+
+/*  Column has a total of four (4) images with one (1) in portrait orientation */
+
+/*  IMPORTANT: This class set refers to a series that was captured in 
+    4:3 (micro 4/3) format and therefore differs in width percentages
+    to a comparable series captured in 3:2 (DSLR) format */
+
+/*  TITLE(S) */
+/*  Can't find my damn Keys (modal thumbnails) */
+
+.column-four-one-4-3 {
+  width: 28.47%;
+}
+
+.column-four-one-4-3-portrait {
+  width: 14.59%;
+}
+
+/*  Below class used as a hack to correct image alignment on modal screen */
+
+.column-four-one-4-3-potrait-demo {
+  width: 14.59%;
+}
+
+/* The Modal (background) */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  padding-top: 80px;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: black;
+}
+
+/* Modal Content */
+.modal-content {
+  position: relative;
+  margin: auto;
+  padding: 0;
+  width: 95%;
+  max-width: 1200px;
+  background-color: black;
+}
+
+/* The Close Button */
+.close {
+  color: white;
+  position: absolute;
+  top: 10px;
+  right: 25px;
+  font-size: 35px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #999;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.mySlides {
+  display: none;
+  padding-bottom: 30px;
+}
+
+.mySlides img {
+  border: solid gray 1px;
+}
+
+.cursor {
+  cursor: pointer;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -50px;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* Class added to portrait oriented images to center within slideshow */
+.portrait-image-centre {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.caption-container {
+  text-align: center;
+  background-color: black;
+  padding: 2px 16px;
+  color: white;
+}
+
+.demo {
+  opacity: 0.6;
+}
+
+/* Adds padding to lower row of thumbnails */
+.demo-lower {
+  padding-bottom: 80px;
+}
+
+.active,
+.demo:hover {
+  opacity: 1;
+}
+
+img.hover-shadow {
+  transition: 0.3s;
+}
+
+.hover-shadow:hover {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+@media only screen and (min-width: 768px) {
+  section .frame-back-button-container {
+    padding: 45px 5% 0 5%;
+  }
+}
+
+@media only screen and (min-width: 992px) {
+}
+

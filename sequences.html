@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+
+<html lang="en">
+	<head>
+        
+        <title>Marty Upham || Sequences</title>
+		<meta charset="UTF-8">
+        
+        <!--Viewport of your page, which will give the browser instructions on 
+        how to control the page's dimensions and scaling whilst aiding reponsive design-->
+        
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <!-- Favicon Metadata (page icon) -->
+        <link rel="shortcut icon" type="image/gif" href="images/.gif">
+        
+        <!-- Open Graph/Link Preview (media content when sending url links) -->
+        <meta property="og:site_name" content="Marty Upham" />
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="art.martyupham.com/sequences.html" />
+        
+        <!-- %%%%% -->
+        <meta property="og:image" content="Images/cant_find_my_keys-3_OG_1200_x_630px.jpg" />
+        
+        <!-- %%%%% -->
+        <meta property="og:title" content="Sequences || Marty Upham" />
+        
+        <!-- %%%%% -->
+        <meta property="og:description" content="Sequences Marty Upham" />
+        
+        <!-- STYLE Sheets -->
+        <!-- This style sheets represents specific styles applicable to this page -->
+        <link rel="stylesheet" href="css/sequences.css">
+        
+        <link rel="stylesheet" href="css/global.css">
+        <link rel="stylesheet" href="css/responsive.css">
+        
+        
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap" rel="stylesheet">   
+        
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
+        
+	</head>
+    
+    
+    <!-- OPENING NOTES -->
+    <!-- Comments are written directly above the HTML that is written --> 
+    <!-- In some detailed cases, further commentary may appear to the right -->
+    
+    
+    <!-- START of page -->
+    
+    <body>   
+        
+        <div class="page-container">
+            
+            
+            <!-- SPINNER DISABLED -->
+            <!-- Spinner displayed if page is lagging -->
+            
+            <!--
+            <div id="spinner-overlay">
+                <div class="spinner"></div>
+            </div>
+            -->
+            
+            <!-- NAVIGATION -->
+            <section>
+
+                <div class="nav-container">
+
+                    <div class="top-nav-bar">
+
+                        <!-- TITLE BANNER VIDEO (All pages except home page) -->
+                        <!-- The 'defaultMuted' and 'playsinline' attributes allow for the -->
+                        <!-- video to be autoplayed when accessed by mobile devices -->
+
+                        <video autoplay loop muted defaultMuted playsinline 
+                               class ="titleBannerVid" 
+                               poster="images/title_banner_1920X1080_Trim_18_Sec_Moment.jpg" >
+                          <source src="video/Tv Noise Glitch 3-1.mp4" type="video/mp4">
+                          <source src="video/.webm" type="video/webm">  
+                          Your browser does not support HTML5 video.
+
+                        </video>
+                        
+                        <!-- MOBILE SITE TITLE responsive at 768px -->
+                        <div class="mobile-site-title">
+                                <a href="index.html">Marty Upham</a>
+                            </div>
+                        
+                        
+                        <div class="site-title">
+                           <a href="index.html">Marty <br> Upham</a>
+                            <div class="menu-btn">
+                                <!-- onclick btn uses JS to open responsive menu -->
+                                <a href="javascript:void(0)" 
+                                   onclick="rotateIcon(); myMobileMenu(); openMenuBar()">
+                                    <i class="fas fa-bars" id="menu-icon"></i>
+                                </a>
+                            </div>
+                            
+                        </div>
+                        
+                        
+
+                    </div>
+
+                    <!-- The mobile-nav opens with onclick MyMobileMenu() -->
+
+                    <div class="mobile-nav bold-bg">
+                          <!-- Navigation links (hidden by default) -->
+                          <div id="myLinks">
+                            <a href="index.html">Home</a>
+                            <a href="sequences.html">Sequences</a>
+                            <a href="about.html">About</a>
+                          </div>
+
+                    </div>
+
+
+                    <!-- The menu-bar opens with onclick openMenuBar() -->
+                    <!-- and replaces the mobile-nav at 992px -->
+
+                    <div class="menu-bar-container" id="navBarMenuGrab"> 
+                        <div id="myMenuBar">
+                            <a href="index.html">Home</a>
+                            <a href="sequences.html">Sequences</a>
+                            <a href="about.html">About</a>
+                        </div>
+
+                    </div>
+
+
+                </div>
+                
+                <!-- Breadcrumb Trail .... -->
+
+                <div class="breadcrumb">
+                    <ul>
+                      <li><a href="index.html">Home</a></li>
+                      <li><span>Sequences</span></li>
+                    </ul>
+                </div>
+            
+            </section>
+            
+        
+            <!-- MAIN CONTENT -->
+            <section>
+                
+                <div class="sequence-content">
+                    
+                        
+                        <div class="row">
+
+                            <div class="col-xs-12 col-m-6 image-container-sp-one">
+
+                                <!-- sp-one/sp-two classes, provide unique side padding to responsive images -->
+                                <!-- without breaking other rules pages/sections of the site. -->
+                                <!-- Activated at 768px wide -->
+                                
+                                <div class="image-graphic-mobile">
+                                
+                                    <a href="javascript:delay('cant-find-my-keys.html')">
+                                        
+                                        <img src="Images/cant_find_my_keys-3_CROP_1-1_768px.jpg" id="imageSwapSmallThreeMobile"
+                                             
+                                             ontouchstart="changePicNineMobile()">
+                                        
+                                    </a>
+                                    
+                                </div>
+                                
+                                <div class="image-graphic-desktop">
+                                
+                                    <a href="javascript:delay('cant-find-my-keys.html')">
+
+                                        <img src="Images/cant_find_my_keys-3_CROP_1-1_768px.jpg" id="imageSwapSmallThree"
+                                             
+                                             onpointerover="changePicNine()" onpointerout="changePicTen()">
+                                    
+                                    </a>
+                                    
+                                </div>
+                                     
+
+                            </div>
+
+                            <div class="col-xs-12 col-m-6 image-container-sp-two">
+                                
+                                <div class="image-graphic-mobile">
+
+                                    <a href="javascript:delay('birds.html')">
+                                        
+                                        <img src="Images/birds-3_CROP_1-1_768px.jpg" id="imageSwapSmallFourMobile"
+                                             ontouchstart="changePicElevenMobile()">
+                                    </a> 
+                                    
+                                </div>
+                                    
+                                <div class="image-graphic-desktop">
+                                        
+                                    <a href="javascript:delay('birds.html')">
+                                        
+                                        <img src="Images/birds-3_CROP_1-1_768px.jpg" id="imageSwapSmallFour"
+                                             
+                                             onpointerover="changePicEleven()" onpointerout="changePicTwelve()">
+                                    
+                                    </a>
+                                    
+                                </div>    
+                                
+
+                            </div>
+
+                        </div>
+
+                        <div class="row">
+
+                            <div class="col-xs-12 col-m-6 image-container-sp-one">
+
+                                <div class="image-graphic-mobile">
+                                
+                                    <a href="javascript:delay('tomorrows-past.html')">
+                                        
+                                        <img src="Images/Tomorrows_Past-2_CROP_1-1_640px.jpg" id="imageSwapSmallTwoMobile"
+                                             
+                                            ontouchstart="changePicFiveMobile()">
+                                        
+                                    </a>
+                                    
+                                </div>
+                                
+                                <div class="image-graphic-desktop">
+                                        
+                                    <a href="javascript:delay('tomorrows-past.html')">
+                                        
+                                        <img src="Images/Tomorrows_Past-2_CROP_1-1_640px.jpg" id="imageSwapSmallTwo"
+                                             
+                                            onpointerover="changePicFive()" onpointerout="changePicSix()">
+                                        
+                                        
+                                    </a>
+                                    
+                                </div>
+        
+
+                            </div>
+
+                            <div class="col-xs-12 col-m-6 image-container-sp-two">
+                                
+                                <div class="image-graphic-mobile">
+
+                                
+                                    <a href="javascript:delay('vertically-malaligned.html')">
+                                        
+                                        <img src="Images/Vertically_Malaligned-5_CROP_1-1_768px.jpg" id="imageSwapSmallFiveMobile"
+                                             
+                                             ontouchstart="changePicThirteenMobile()">
+                                     </a>
+                                    
+                                </div>
+                                
+                                <div class="image-graphic-desktop">
+                                        
+                                  <a href="javascript:delay('vertically-malaligned.html')">
+                                        
+                                        <img src="Images/Vertically_Malaligned-5_CROP_1-1_768px.jpg" id="imageSwapSmallFive"
+                                             
+                                             onpointerover="changePicThirteen()" onpointerout="changePicFourteen()">
+                                    </a>
+                                    
+                                </div>
+                                
+
+                            </div>
+
+                        </div> 
+
+                        <div class="row">
+
+                            <div class="col-xs-12 col-m-6 image-container-sp-one">
+
+                                <div class="image-graphic-mobile">
+                                
+                                    <a href="javascript:delay('i-awoke-from-a-dark-dream.html')">
+                                        
+                                        <img src="Images/I_awoke_from_a_dark_dream-4_CROP_1-1_768px.jpg" id="imageSwapSmallSixMobile"
+                                             
+                                             ontouchstart="changePicFifteenMobile()">
+                                        
+                                    </a>
+                                    
+                                </div>
+                                
+                                <div class="image-graphic-desktop">
+                                        
+                                    <a href="javascript:delay('i-awoke-from-a-dark-dream.html')">
+                                        
+                                        <img src="Images/I_awoke_from_a_dark_dream-4_CROP_1-1_768px.jpg" id="imageSwapSmallSix"
+                                            
+                                             onpointerover="changePicFifteen()" onpointerout="changePicSixteen()">
+                                    </a>
+                                    
+                                </div>
+                                
+
+                            </div>
+
+                            <div class="col-xs-12 col-m-6 image-container-sp-two">
+                                
+                                <div class="image-graphic-mobile">
+
+                                
+                                    <a href="javascript:delay('a-mid-afternoon-change.html')">
+                                        
+                                        <img src="Images/mid-afternoon_change-1_CROP_1-1_768px.jpg" id="imageSwapSmallOneMobile"
+                                             
+                                            ontouchstart="changePicOneMobile()">
+                                        
+                                    </a>
+                                    
+                                </div>
+                                
+                                <div class="image-graphic-desktop">
+                                        
+                                    <a href="javascript:delay('a-mid-afternoon-change.html')">
+                                        
+                                        <img src="Images/mid-afternoon_change-1_CROP_1-1_768px.jpg" id="imageSwapSmallOne"
+                                             
+                                            onpointerover="changePicOne()" onpointerout="changePicTwo()">
+                                    </a>
+                                    
+                                </div>
+                                
+
+                            </div>
+
+                        </div>
+
+                        <div class="row">
+
+                            <div class="col-xs-12 col-m-6 image-container-sp-one">
+
+                                <div class="image-graphic-mobile">
+                                
+                                    <a href ="javascript:delay('gone-fishing.html')">
+                                        
+                                        <img  src="Images/Gone_Fishing-3_CROP_1-1_768px.jpg" id="imageSwapSmallSevenMobile"
+                                             
+                                             ontouchstart="changePicSeventeenMobile()">
+                                    </a>
+                                    
+                                </div>
+                                
+                                <div class="image-graphic-desktop">
+                                    
+                                    <a href ="javascript:delay('gone-fishing.html')">
+                                        
+                                        <img  src="Images/Gone_Fishing-3_CROP_1-1_768px.jpg" id="imageSwapSmallSeven"
+                                             
+                                             onpointerover="changePicSeventeen()" onpointerout="changePicEighteen()">
+                                    </a>
+                                    
+                                </div>
+                                
+
+                            </div>
+
+
+
+                        </div> 
+    
+                </div>
+
+            </section>
+            
+            <!-- FOOTER -->
+            <!-- Relies on parent "page-container" for page positioning -->
+            <div class="first-tier-footer">
+
+                <p>All Images Copyright &#169;</p>
+                <p>Marty Upham 2018-<span id="year"></span></p>
+                
+                <a href="https://www.instagram.com/martyupham.art/" class="fa fa-brands fa-instagram"></a>
+
+            </div>
+
+            
+
+        </div>
+        
+        
+        
+
+
+    <script src="Javascript/script.js">
+    </script>
+
+	</body>
+</html>
+
+

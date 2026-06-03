@@ -1,0 +1,386 @@
+
+
+/*  SEQUENCE PAGE Style Sheet
+
+/*  Comments are written directly above the CSS that is written. In Some cases of nested styling, comments are beside */
+
+
+
+/* SEQUENCE (INDIVIDUAL WORK) PAGES */
+
+.frame-back-button-container {
+  width: 100%;
+    max-width:1200px;
+  padding: 45px 2.5% 0 2.5%;
+    margin:auto;
+    
+}
+
+.frame-back-button {
+  height: auto;
+  margin: 0;
+  width: 100%;
+  padding-left: 15px;
+}
+
+.frame-back-button a {
+  text-decoration: none;
+  text-transform: uppercase;
+  color: black;
+  letter-spacing: 4px;
+  font-size: 1.2rem;
+    
+}
+
+.frame-back-button span {
+  display: inline-block; /* Rotates, aligns and corrects text 
+                            height of backward facing 'C' in BACK */
+  -webkit-transform: matrix(-1, 0, 0, 1, 0, 0);
+  -moz-transform: matrix(-1, 0, 0, 1, 0, 0);
+  -o-transform: matrix(-1, 0, 0, 1, 0, 0);
+  transform: matrix(-1, 0, 0, 1, 0, 0);
+
+  color: red;
+  padding-left: 4px; /* Corrects letter spacing issues derived from 'C' being rotated */
+  margin-left: -4px;
+font-weight: bold;
+}
+
+/*  Image container for sequence title pages that display works side by side */
+
+.image-container {
+  margin: auto;
+  padding: 12.5% 15px 0 15px;
+  width: 100%;
+  border-top: solid black 2px;
+  border-bottom: solid black 2px;
+}
+
+
+
+/*  Expands image to fill space (Torn images) */
+.image-expand img {
+  width: 100%;
+}
+
+
+
+/* COLUMN CLASSES (unique) */
+/* The below classes are used for the sequence pages and
+    use specific width percentages that are calculated and 
+    reflect the individual work*/
+
+[class*="column"] {
+  padding: 4px;
+  float: left;
+}
+
+
+
+/*  Column has a total of one (1) image. 
+
+/*  TITLE(S) */
+/*  Birds (partial) */
+/*  Gone Fishing (partial) */
+/*  Tomorrows Past (partial) */
+/*  Vertical Malaligned (partial) */
+
+.column-one {
+  width: 100%;
+}
+
+/*  Column has a total of two (2) images. 
+
+/*  TITLE(S) */
+/*  A mid-afternoon change (partial)*/
+/*  Birds (partial)*/
+/*  Can't find my damn Keys (partial) */
+/*  Gone Fishing (partial) */
+/*  I awoke from a dark dream (partial) */
+/*  Tomorrows Past (partial) */
+/*  Vertical Malaligned (partial) */
+
+.column-two {
+  width: 50%;
+}
+
+/*  Column has a total of two (2) images with one (1) in portrait orientation */
+
+/*  TITLE(S) */
+/*  Gone Fishing (partial) */
+/*  I awoke from a dark dream (partial) */
+/*  Tomorrows Past (partial) */
+/*  Vertical Malaligned (partial) */
+
+.column-two-one {
+  width: 68.8%;
+}
+
+.column-two-one-portrait {
+  width: 31.2%;
+}
+
+/*  Below class used as a hack to correct image alignment on modal screen */
+
+.column-two-one-portrait-demo {
+  width: 31.2%;
+}
+
+/*  Column has a total of two (2) images with one (1) in portrait orientation */
+
+/*  IMPORTANT: This class set refers to a series that was captured in 
+    4:3 (micro 4/3) format and therefore differs in width percentages
+    to a comparable series captured in 3:2 (DSLR) format */
+
+/*  TITLE(S) */
+/*  Can't find my damn Keys (partial) */
+
+.column-two-one-4-3 {
+  width: 66.3%;
+}
+
+.column-two-one-4-3-portrait {
+  width: 33.7%;
+}
+
+/*  Below class used as a hack to correct image alignment on modal screen */
+
+.column-two-one-4-3-portrait-demo {
+  width: 33.7%;
+}
+
+/*  Column has a total of three (3) images. All landscape orientaion */
+
+/*  TITLE(S) */
+/*  Birds (modal thumbnails) */
+/*  Gone Fishing (modal thumbnails) */
+/*  Tomorrows Past (modal thumbnails) */
+/*  Vertically Malaligned (modal thumbnails) */
+
+.column-three {
+  width: 33.33%;
+}
+
+/*  Column has a total of three (3) images with one (1) in portrait orientation */
+
+/*  TITLE(S) */
+/*  Tomorrows Past (modal thumbnails) */
+/*  Vertically Malaligned (modal thumbnails) */
+
+.column-three-one {
+  width: 40.7%;
+}
+
+.column-three-one-portrait {
+  width: 18.6%;
+}
+
+/*  Below class used as a hack to correct image alignment on modal screen */
+
+.column-three-one-portrait-demo {
+  width: 18.6%;
+}
+
+/*  Column has a total of four (4) images. */
+
+/*  TITLE(S) */
+/*  A mid-afternoon change (modal thumbnails) */
+
+.column-four {
+  width: 25%;
+}
+
+/*  Column has a total of four (4) images with one (1) in portrait orientation */
+
+/*  TITLE(S) */
+/*  I awoke from a dark dream (modal thumbnails) */
+
+.column-four-one {
+  width: 28.9%;
+}
+
+.column-four-one-portrait {
+  width: 13.3%;
+}
+
+/*  Below class used as a hack to correct image alignment on modal screen */
+
+.column-four-one-potrait-demo {
+  width: 13.3%;
+}
+
+/*  Column has a total of four (4) images with one (1) in portrait orientation */
+
+/*  IMPORTANT: This class set refers to a series that was captured in 
+    4:3 (micro 4/3) format and therefore differs in width percentages
+    to a comparable series captured in 3:2 (DSLR) format */
+
+/*  TITLE(S) */
+/*  Can't find my damn Keys (modal thumbnails) */
+
+.column-four-one-4-3 {
+  width: 28.47%;
+}
+
+.column-four-one-4-3-portrait {
+  width: 14.59%;
+}
+
+/*  Below class used as a hack to correct image alignment on modal screen */
+
+.column-four-one-4-3-potrait-demo {
+  width: 14.59%;
+}
+
+/* The Modal (background) */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  padding-top: 80px;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: black;
+}
+
+/* Modal Content */
+.modal-content {
+  position: relative;
+  margin: auto;
+  padding: 0;
+  width: 95%;
+  max-width: 1200px;
+  background-color: black;
+}
+
+/* The Close Button */
+.close {
+  color: white;
+  position: absolute;
+  top: 10px;
+  right: 25px;
+  font-size: 35px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #999;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.mySlides {
+  display: none;
+  padding-bottom: 30px;
+}
+
+.mySlides img {
+  border: solid gray 1px;
+}
+
+.cursor {
+  cursor: pointer;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -50px;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* Class added to portrait oriented images to center within slideshow */
+.portrait-image-centre {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.caption-container {
+  text-align: center;
+  background-color: black;
+  padding: 2px 16px;
+  color: white;
+}
+
+.demo {
+  opacity: 0.6;
+}
+
+/* Adds padding to lower row of thumbnails */
+.demo-lower {
+  padding-bottom: 80px;
+}
+
+.active,
+.demo:hover {
+  opacity: 1;
+}
+
+img.hover-shadow {
+  transition: 0.3s;
+}
+
+.hover-shadow:hover {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+
+/*  MEDIA RULES */
+
+@media only screen and (min-width: 768px) {
+  section .frame-back-button-container {
+    padding: 45px 2.5% 0 2.5%;
+  }
+}
+
+@media only screen and (min-width: 992px) {
+  section .frame-back-button-container {
+    padding: 45px 2.5% 0 2.5%;
+  }
+    
+.image-container {
+  margin: auto;
+  padding: 100px 15px 0 15px;
+}
+
+
+
+
+
+

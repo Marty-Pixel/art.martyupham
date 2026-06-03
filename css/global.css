@@ -1,0 +1,394 @@
+
+
+/*  GLOBAL Style Sheet (Contains navigation and footer)
+
+/*  Comments are written directly above the CSS that is written. 
+    In Some cases of nested styling, comments are beside */
+
+/*  GLOBAL - Styles are applicable to all pages. Any exceptions
+    will be marked in comments next to the specific style/class */
+
+
+
+html,
+body {
+  margin: 0;
+  height: 100%;
+  font-family: "Roboto Mono", monospace;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+
+/*  PAGE CONTAINER - All pages except home page that
+    uses .home-page-container for modal/javascript purposes */
+
+.page-container {
+  position: relative;
+  margin: auto;
+  min-height: 100vh;
+  width: 100%;
+  max-width: 1920px; /* MAX WIDTH OF SCREEN CONTENT  */
+  padding: 0; /* SIDE PADDING  */
+}
+
+
+
+/*  NAVIGATION - applicable to all pages except art work pages */
+
+.nav-container {
+  width: 100%;
+  top: 0;  
+}
+
+.top-nav-bar {
+  position: relative;
+  width: 100%;
+    min-height:66vh;
+    background: rgba(0, 0, 0, 0.2);
+    border-bottom: solid black 2px;
+  overflow: hidden;
+}
+
+.top-nav-bar a {
+  color: white;
+}
+
+
+.titleBannerVid {
+  position: absolute;
+  z-index: -99; /* Sits behind Site Title and the Menu Btn */
+  
+  min-width: 100%; /* Video always covers the width of the screen 100% */
+  object-fit: cover; /* Covers screen while maintaining videos aspect ratio */
+}
+
+.mobile-site-title  {
+    position:absolute;
+    top:29%;
+    font-size: 19vw;
+  text-transform: uppercase;
+  
+    
+}
+
+.mobile-site-title a    {
+    
+    display:inline-block;
+    width:auto;
+    text-align: center;
+    text-decoration: none;
+  cursor: pointer; 
+    line-height: 0.75;
+    
+}
+
+
+
+.site-title {
+  font-size: 4rem;
+  text-transform: uppercase;
+  padding: 36px;
+  width: auto;
+}
+
+.site-title a {
+    display:none; /* Responsive mode: Text Displays at 768px */
+    
+  text-decoration: none;
+  cursor: pointer;
+    line-height: 0.75;
+}
+
+/* Responsive menu. See menu-container, menu-box-1 & menu-box-2 below */
+.menu-btn {
+  position: absolute;
+  top: 0;
+  right: 0;
+  font-size: 2rem;
+  cursor: pointer;
+  padding: 36px;
+
+  background: none;
+  -ms-transform: rotate(0deg); /* IE 9 */
+  -webkit-transform: rotate(0deg); /* Safari prior 9.0 */
+  transform: rotate(0deg); /* Standard syntax */
+}
+
+.menu-btn-rotate-90 {
+  position: absolute;
+  top: 0;
+  right: 0;
+  font-size: 2rem;
+  cursor: pointer;
+  padding-left: 36px;
+  padding-top: 36px;
+  background: none;
+  -ms-transform: rotate(90deg); /* IE 9 */
+  -webkit-transform: rotate(90deg); /* Safari prior 9.0 */
+  transform: rotate(90deg); /* Standard syntax */
+}
+
+.menu-btn a {
+    display:block;
+  text-decoration: none;
+   color:white; 
+}
+
+.menu-btn a:hover {
+  color: #00e68a;
+}
+
+.menu-btn-rotate-90 a {
+  text-decoration: none;
+  color: white;
+}
+
+.menu-btn-rotate-90 a:hover {
+  color:
+}
+
+/* Mobile Menu. Disable at 992px and enable larger menu tiles */
+
+/* Style the navigation menu */
+.mobile-nav {
+  overflow: hidden;
+  background: rgba(0, 0, 0, 0.3);
+  position: relative;
+}
+
+/* Appears on all pages except home page. */
+/* See rgba transparency above for home page */
+.bold-bg {
+  background: white;
+  border-bottom: solid black 2px;
+}
+
+.bold-bg a:hover {
+}
+
+/* Hide the links inside the navigation menu (except for logo/home) */
+.mobile-nav #myLinks {
+  display: none;
+}
+
+/* Style navigation menu links */
+.mobile-nav a {
+  font-style: italic;
+  font-size: 1.5rem;
+  color: black;
+  padding: 14px 36px;
+  text-decoration: none;
+  display: block;
+}
+
+.mobile-nav a:hover {
+  background: black;
+  /*  */
+  color: #00e68a;
+}
+
+
+
+
+/* Desktop Menu. Enable at 992px for larger menu tiles */
+
+
+.menu-bar-container {
+  display: none;
+}
+
+#myMenuBar {
+  display: none;
+  float: left;
+  width: 100%;
+  background-color: white;
+  height: auto;
+  z-index: 90;
+  padding: 28px 0;
+  border-bottom: solid black 2px;
+}
+
+#myMenuBar a {
+  font-style: italic;
+  font-size: 1.5rem;
+  color: black;
+  padding: 0 72px;
+  text-decoration: none;
+  z-index: 90;
+}
+
+#myMenuBar a:hover {
+  color: #00e68a;
+}
+
+
+
+
+
+/* Breadcrumbs appear on all pages except home page */
+
+.breadcrumb {
+  float: left;
+  width: 100%;
+  margin-bottom: 75px;
+  border-bottom: solid black 2px;
+}
+
+.breadcrumb ul {
+  padding: 6px 32px;
+  list-style: none;
+}
+.breadcrumb ul li {
+  display: inline;
+  font-size: 1.2rem;
+  color: black;
+  letter-spacing: 2px;
+}
+.breadcrumb ul li + li:before {
+  padding: 8px;
+  color: black;
+  content: "/\00a0";
+}
+.breadcrumb ul li a {
+  color: black;
+  text-decoration: none;
+  padding: 8px;
+  letter-spacing: 2px;
+}
+.breadcrumb ul li a:hover {
+  text-decoration: underline;
+}
+
+.breadcrumb ul li span {
+  color: #00e68a;
+}
+
+
+/* Section  */
+
+/* .main-content does not appear on sequence (secondary) page */
+
+section .main-content {
+  padding: 10% 2.5% 0 2.5%;
+    max-width:1200px;
+    margin:auto;
+}
+
+
+/* mobile/desktop interchange for graphic series title overlay  */
+/* also utilised on sequences page  */
+
+.image-graphic-mobile   {
+    display:block;
+}
+
+.image-graphic-desktop {
+  display: none;
+}
+
+
+
+/*  FOOTER  */
+
+.first-tier-footer {
+  position: sticky; /* Positions footer at bottom of page */
+  top: 100%; /* below its parent, home-page-container and or page-container */
+  padding: 8px 16px;
+    border-top: solid black 2px;
+}
+
+.footer {
+  position: sticky; /* Positions footer at bottom of page */
+  top: 100%; /* below its parent, page-container */
+  padding: 8px 16px;
+}
+
+.first-tier-footer p, .footer p {
+  letter-spacing: 1.5px;
+  font-size: 0.9rem;
+   
+  text-align: center;
+}
+
+/*  Social Media  */
+
+.fa {
+    position:absolute;
+    top:30px;
+    right:36px;
+  font-size: 2.5rem;
+  text-align: center;
+  text-decoration: none;
+}
+
+.fa:hover {
+    color: #C13584;
+    cursor: pointer;
+}
+
+.fa-instagram {
+  
+  color: black;
+}
+
+
+
+/*  MEDIA RULES  */
+
+@media only screen and (max-width: 600px) {
+    
+    .first-tier-footer p, .footer p {
+      letter-spacing: 1.3px;
+      font-size: 0.8rem;
+    }
+    
+    .fa {
+           font-size:1.5rem;
+            
+        }
+    
+}
+
+@media only screen and (min-width: 768px) {
+    
+    .top-nav-bar    {   /* RESPONSIVE: minimizes height of video/top-nav-bar for widescreen */
+        min-height: 0; 
+    }
+    
+    .site-title a {
+    display:inline-block;
+    }
+    
+    .mobile-site-title     {
+        display:none;
+    }
+    
+    section .main-content {
+    padding: 80px 2.5% 0 2.5%;
+  }
+    
+    
+    
+  
+}
+
+@media only screen and (min-width: 1366px) {
+
+    .image-graphic-mobile {
+    display:none;
+  }
+    
+  .image-graphic-desktop {
+    display:block;
+  }
+  
+
+}
